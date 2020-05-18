@@ -33,6 +33,16 @@ function changeToGreek() {
     var who_we_are = document.getElementById('whoweare');
     who_we_are.getElementsByTagName('h2')[0].innerHTML = 'ΠΟΙΟΙ ΕΙΜΑΣΤΕ';
     who_we_are.getElementsByTagName('p')[0].innerHTML = 'Η ΙΕΕΕ Αντιπροσωπεύει';
+    //services etc stuff
+    var services = document.getElementsByClassName('service-area')[0].getElementsByClassName('row wow bounceInUp')[0];
+    var moreServices = services.getElementsByClassName('col-md-4 col-sm-6 col-xs-12');
+    moreServices[0].getElementsByTagName('p')[0].innerHTML = 'Αυτά είναι ελληνικά κείμενα, αλλα δεν ξέρω τι να γράψω :)';
+    moreServices[1].getElementsByTagName('p')[0].innerHTML = 'Αυτά είναι ελληνικά κείμενα, αλλα δεν ξέρω τι να γράψω :)';
+    moreServices[2].getElementsByTagName('p')[0].innerHTML = 'Αυτά είναι ελληνικά κείμενα, αλλα δεν ξέρω τι να γράψω :)';
+    moreServices[3].getElementsByTagName('p')[0].innerHTML = 'Αυτά είναι ελληνικά κείμενα, αλλα δεν ξέρω τι να γράψω :)';
+    moreServices[4].getElementsByTagName('p')[0].innerHTML = 'Αυτά είναι ελληνικά κείμενα, αλλα δεν ξέρω τι να γράψω :)';
+    moreServices[5].getElementsByTagName('p')[0].innerHTML = 'Αυτά είναι ελληνικά κείμενα, αλλα δεν ξέρω τι να γράψω :)';
+    
 }
 
 //this fucntion changes all the texts of the page from greek to english :(
@@ -56,4 +66,14 @@ function changeToEnglish() {
     var who_we_are = document.getElementById('whoweare');
     who_we_are.getElementsByTagName('h2')[0].innerHTML = 'WHO WE ARE';
     who_we_are.getElementsByTagName('p')[0].innerHTML = 'IEEE stands for';
+    //services etc stuff
+    var services = document.getElementsByClassName('service-area')[0].getElementsByClassName('row wow bounceInUp')[0];
+    var moreServices = services.getElementsByClassName('col-md-4 col-sm-6 col-xs-12');
+    moreServices[0].getElementsByTagName('p')[0].innerHTML = 'We share our knowledge with each other, talk about new technologies, and discuss about tools\' strengths & weaknesses. ';
+    moreServices[1].getElementsByTagName('p')[0].innerHTML = 'We collaborate, share ideas and co-organize events along with other IEEE student branches around Greece.';
+    moreServices[2].getElementsByTagName('p')[0].innerHTML = 'IEEE own tagline is \'Advancing technology for humanity\'. Our own primary act could not be any other than helping people grow, through talks & workshops. ';
+    moreServices[3].getElementsByTagName('p')[0].innerHTML = 'Our core is volunteering. We believe in teamwork and helping people, without discrimination, working and advancing together. ';
+    moreServices[4].getElementsByTagName('p')[0].innerHTML = 'We are not equipped only with brackets, commands and numbers, but banners, colors and frames too! ';
+    moreServices[5].getElementsByTagName('p')[0].innerHTML = 'We believe in an accessible web. We focus on keeping our web aspects easy to use while delivering the most elegant possible result. ';
+    
 }

@@ -44,6 +44,24 @@ function changeToGreek() {
     //members
     document.getElementsByClassName('container text-center wow zoomIn')[0].getElementsByTagName('h2')[0].getElementsByTagName('b')[0].innerHTML = "ΜΕΛΗ";
     document.getElementsByClassName('container text-center wow zoomIn')[0].getElementsByTagName('p')[0].innerHTML = "Λίστα Μελών της IEEE <br>του παραρτήματος μας";
+    //member list
+    //nasia
+    document.getElementsByClassName('team-member')[13].getElementsByClassName('team-member-name')[0].innerText = 'Σαμσούρη Νάσια';
+    document.getElementsByClassName('team-member')[13].getElementsByClassName('team-member-designation')[0].innerText = 'Πρόεδρος';
+    //apostolopoulos
+    document.getElementsByClassName('team-member')[14].getElementsByClassName('team-member-name')[0].innerText = 'Αποστολόπουλος Γεώργιος';
+    document.getElementsByClassName('team-member')[14].getElementsByClassName('team-member-designation')[0].innerText = 'Αντιπρόεδρος, Design Committee';
+    //mousa
+    document.getElementsByClassName('team-member')[15].getElementsByClassName('team-member-name')[0].innerText = 'Μούσα Αναστασία';
+    document.getElementsByClassName('team-member')[15].getElementsByClassName('team-member-designation')[0].innerText = 'Γραμματέας, Publicity Committee, Media Committee';
+    //giapa
+    document.getElementsByClassName('team-member')[16].getElementsByClassName('team-member-name')[0].innerText = 'Γιαπαντζής Γρηγόρης';
+    document.getElementsByClassName('team-member')[16].getElementsByClassName('team-member-designation')[0].innerText = 'Ταμείας';
+    //sifis
+    document.getElementsByClassName('team-member')[18].getElementsByClassName('team-member-name')[0].innerText = 'Κοέν Ιωσήφ';
+    document.getElementsByClassName('team-member')[18].getElementsByClassName('team-member-designation')[0].innerText = 'Μέντορας';
+
+
 }
 
 //this fucntion changes all the texts of the page from greek to english :(
@@ -78,4 +96,21 @@ function changeToEnglish() {
     //members
     document.getElementsByClassName('container text-center wow zoomIn')[0].getElementsByTagName('h2')[0].getElementsByTagName('b')[0].innerHTML = "MEMBERS";
     document.getElementsByClassName('container text-center wow zoomIn')[0].getElementsByTagName('p')[0].innerHTML = "Complete list of the members<br>of our IEEE SB";
+
+    //member list
+    //nasia
+    document.getElementsByClassName('team-member')[13].getElementsByClassName('team-member-name')[0].innerText = 'Samsouri Nasia';
+    document.getElementsByClassName('team-member')[13].getElementsByClassName('team-member-designation')[0].innerText = 'Chair';
+    //apostolopoulos
+    document.getElementsByClassName('team-member')[14].getElementsByClassName('team-member-name')[0].innerText = 'Apostolopoulos Georgios';
+    document.getElementsByClassName('team-member')[14].getElementsByClassName('team-member-designation')[0].innerText = 'Vice-Chair, Design Committee';
+    //mousa
+    document.getElementsByClassName('team-member')[15].getElementsByClassName('team-member-name')[0].innerText = 'Mousa Anastasia';
+    document.getElementsByClassName('team-member')[15].getElementsByClassName('team-member-designation')[0].innerText = 'Secretary, Publicity Committee, Media Committee';
+    //giapa
+    document.getElementsByClassName('team-member')[16].getElementsByClassName('team-member-name')[0].innerText = 'Giapantzis Gregory';
+    document.getElementsByClassName('team-member')[16].getElementsByClassName('team-member-designation')[0].innerText = 'Treasurer';
+    //sifis
+    document.getElementsByClassName('team-member')[18].getElementsByClassName('team-member-name')[0].innerText = 'Κοέν Ιωσήφ';
+    document.getElementsByClassName('team-member')[18].getElementsByClassName('team-member-designation')[0].innerText = 'Μέντορας';
 }

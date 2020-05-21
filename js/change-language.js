@@ -5,7 +5,7 @@ function changeLanguage() {
     const nav_menu = document.getElementById('nav-menu');
     const nav_menu_items = nav_menu.getElementsByTagName('li');
     const country_flag = nav_menu_items[6].getElementsByTagName('img')[0].src.split('/').pop();
-    if (country_flag == 'english_flag.png') {
+    if (country_flag == 'greek_flag.png') {
         changeToGreek();
     } else {
         changeToEnglish();
@@ -22,7 +22,7 @@ function changeToGreek() {
     nav_menu[3].getElementsByTagName('a')[0].innerHTML = "Γενικες Ερωτησεις"
     nav_menu[4].getElementsByTagName('a')[0].innerHTML = "Προσφατες Ανακοινωσεις"
     nav_menu[5].getElementsByTagName('a')[0].innerHTML = "Επικοινωνια"
-    nav_menu[6].getElementsByTagName('img')[0].src = './img/greek_flag.png';
+    nav_menu[6].getElementsByTagName('img')[0].src = './img/english_flag.png';
     //contact us and learn today buttons
     var conmore = document.getElementById('conmore').getElementsByTagName('a');
     conmore[0].innerHTML = 'Επικοινωνηστε';
@@ -49,7 +49,7 @@ function changeToGreek() {
     document.getElementsByClassName('team-member')[13].getElementsByClassName('team-member-name')[0].innerText = 'Σαμσούρη Νάσια';
     document.getElementsByClassName('team-member')[13].getElementsByClassName('team-member-designation')[0].innerText = 'Πρόεδρος';
     //apostolopoulos
-    document.getElementsByClassName('team-member')[14].getElementsByClassName('team-member-name')[0].innerText = 'Αποστολόπουλος Γεώργιος';
+    document.getElementsByClassName('team-member')[14].getElementsByClassName('team-member-name')[0].innerText = 'Αποστολόπουλος Γιώργος';
     document.getElementsByClassName('team-member')[14].getElementsByClassName('team-member-designation')[0].innerText = 'Αντιπρόεδρος, Design Committee';
     //mousa
     document.getElementsByClassName('team-member')[15].getElementsByClassName('team-member-name')[0].innerText = 'Μούσα Αναστασία';
@@ -58,9 +58,33 @@ function changeToGreek() {
     document.getElementsByClassName('team-member')[16].getElementsByClassName('team-member-name')[0].innerText = 'Γιαπαντζής Γρηγόρης';
     document.getElementsByClassName('team-member')[16].getElementsByClassName('team-member-designation')[0].innerText = 'Ταμείας';
     //sifis
-    document.getElementsByClassName('team-member')[18].getElementsByClassName('team-member-name')[0].innerText = 'Κοέν Ιωσήφ';
-    document.getElementsByClassName('team-member')[18].getElementsByClassName('team-member-designation')[0].innerText = 'Μέντορας';
-
+    document.getElementsByClassName('team-member')[17].getElementsByClassName('team-member-name')[0].innerText = 'Κοέν Ιωσήφ';
+    document.getElementsByClassName('team-member')[17].getElementsByClassName('team-member-designation')[0].innerText = 'Μέντορας';
+    //chatzimisios
+    document.getElementsByClassName('team-member')[38].getElementsByClassName('team-member-name')[0].innerText = 'Χατζημίσιος Περικλής';
+    document.getElementsByClassName('team-member')[38].getElementsByClassName('team-member-designation')[0].innerText = 'Councelor';
+    //the rest of us
+    document.getElementsByClassName('team-member')[18].getElementsByClassName('team-member-name')[0].innerText = 'Τσακίρης Νίκος';
+    document.getElementsByClassName('team-member')[19].getElementsByClassName('team-member-name')[0].innerText = 'Παπαδόπουλος Παντελής';
+    document.getElementsByClassName('team-member')[20].getElementsByClassName('team-member-name')[0].innerText = 'Γιουβανάκης Δημήτρης';
+    document.getElementsByClassName('team-member')[21].getElementsByClassName('team-member-name')[0].innerText = 'Γερόπουλος Αποστόλης';
+    document.getElementsByClassName('team-member')[22].getElementsByClassName('team-member-name')[0].innerText = 'Σακελλαρίου Γιώργος';
+    document.getElementsByClassName('team-member')[23].getElementsByClassName('team-member-name')[0].innerText = 'Κιουτσίκης Αλέξανδρος';
+    document.getElementsByClassName('team-member')[24].getElementsByClassName('team-member-name')[0].innerText = 'Θεοφάνους Χρίστος';
+    document.getElementsByClassName('team-member')[25].getElementsByClassName('team-member-name')[0].innerText = 'Τετεπουλίδης Δημήτρης';
+    document.getElementsByClassName('team-member')[26].getElementsByClassName('team-member-name')[0].innerText = 'Καλοβελόνης Απόστολος';
+    document.getElementsByClassName('team-member')[27].getElementsByClassName('team-member-name')[0].innerText = 'Μαραντίδου Κωνσταντίνα';
+    document.getElementsByClassName('team-member')[28].getElementsByClassName('team-member-name')[0].innerText = 'Πετράς Δημήτρης';
+    document.getElementsByClassName('team-member')[29].getElementsByClassName('team-member-name')[0].innerText = 'Στασινός Πάνος';
+    document.getElementsByClassName('team-member')[30].getElementsByClassName('team-member-name')[0].innerText = 'Καρανικόλας Γιώργος';
+    document.getElementsByClassName('team-member')[31].getElementsByClassName('team-member-name')[0].innerText = 'Τζίκας Δημήτρης';
+    document.getElementsByClassName('team-member')[32].getElementsByClassName('team-member-name')[0].innerText = 'Στεργιάδου Έλη';
+    document.getElementsByClassName('team-member')[33].getElementsByClassName('team-member-name')[0].innerText = 'Πατράλη Μαρίνα';
+    document.getElementsByClassName('team-member')[34].getElementsByClassName('team-member-name')[0].innerText = 'Πλιάκος Δημήτρης';
+    document.getElementsByClassName('team-member')[35].getElementsByClassName('team-member-name')[0].innerText = 'Θεοχάρης Μιχάλης';
+    document.getElementsByClassName('team-member')[36].getElementsByClassName('team-member-name')[0].innerText = 'Βουράκη Μαριάννα';
+    document.getElementsByClassName('team-member')[37].getElementsByClassName('team-member-name')[0].innerText = 'Καριπίδης Θοδωρής';
+    document.getElementsByClassName('team-member')[38].getElementsByClassName('team-member-name')[0].innerText = 'Χατζημίσιος Περικλής';
 
 }
 
@@ -74,7 +98,7 @@ function changeToEnglish() {
     nav_menu[3].getElementsByTagName('a')[0].innerHTML = "General Questions"
     nav_menu[4].getElementsByTagName('a')[0].innerHTML = "Recent Posts"
     nav_menu[5].getElementsByTagName('a')[0].innerHTML = "Contact Us"
-    nav_menu[6].getElementsByTagName('img')[0].src = './img/english_flag.png';
+    nav_menu[6].getElementsByTagName('img')[0].src = './img/greek_flag.png';
     //contact us and learn today buttons
     var conmore = document.getElementById('conmore').getElementsByTagName('a');
     conmore[0].innerHTML = 'Contact Us!';
@@ -111,6 +135,31 @@ function changeToEnglish() {
     document.getElementsByClassName('team-member')[16].getElementsByClassName('team-member-name')[0].innerText = 'Giapantzis Gregory';
     document.getElementsByClassName('team-member')[16].getElementsByClassName('team-member-designation')[0].innerText = 'Treasurer';
     //sifis
-    document.getElementsByClassName('team-member')[18].getElementsByClassName('team-member-name')[0].innerText = 'Κοέν Ιωσήφ';
-    document.getElementsByClassName('team-member')[18].getElementsByClassName('team-member-designation')[0].innerText = 'Μέντορας';
+    document.getElementsByClassName('team-member')[17].getElementsByClassName('team-member-name')[0].innerText = 'Koen Iosif';
+    document.getElementsByClassName('team-member')[17].getElementsByClassName('team-member-designation')[0].innerText = 'Μέντορας';
+    //chatzimisios
+    document.getElementsByClassName('team-member')[38].getElementsByClassName('team-member-name')[0].innerText = 'Xatzimisios Periklis';
+    document.getElementsByClassName('team-member')[38].getElementsByClassName('team-member-designation')[0].innerText = 'Councelor';
+    //the rest of us
+    document.getElementsByClassName('team-member')[18].getElementsByClassName('team-member-name')[0].innerText = 'Tsakiris Nikos';
+    document.getElementsByClassName('team-member')[19].getElementsByClassName('team-member-name')[0].innerText = 'Papadopoulos Pantelis';
+    document.getElementsByClassName('team-member')[20].getElementsByClassName('team-member-name')[0].innerText = 'Giouvanakis Dimitris';
+    document.getElementsByClassName('team-member')[21].getElementsByClassName('team-member-name')[0].innerText = 'Geropoulos Apostolis';
+    document.getElementsByClassName('team-member')[22].getElementsByClassName('team-member-name')[0].innerText = 'Sakellariou Georgios';
+    document.getElementsByClassName('team-member')[23].getElementsByClassName('team-member-name')[0].innerText = 'Kioutsikis Alexandros';
+    document.getElementsByClassName('team-member')[24].getElementsByClassName('team-member-name')[0].innerText = 'Theofanous Christos';
+    document.getElementsByClassName('team-member')[25].getElementsByClassName('team-member-name')[0].innerText = 'Tetepoulidis Dimitris';
+    document.getElementsByClassName('team-member')[26].getElementsByClassName('team-member-name')[0].innerText = 'Kalovelonis Apostolos';
+    document.getElementsByClassName('team-member')[27].getElementsByClassName('team-member-name')[0].innerText = 'Marantidou Konstantina';
+    document.getElementsByClassName('team-member')[28].getElementsByClassName('team-member-name')[0].innerText = 'Petras Dimitris';
+    document.getElementsByClassName('team-member')[29].getElementsByClassName('team-member-name')[0].innerText = 'Stasinos Panos';
+    document.getElementsByClassName('team-member')[30].getElementsByClassName('team-member-name')[0].innerText = 'Karanikolas Giorgos';
+    document.getElementsByClassName('team-member')[31].getElementsByClassName('team-member-name')[0].innerText = 'Tzikas Dimitris';
+    document.getElementsByClassName('team-member')[32].getElementsByClassName('team-member-name')[0].innerText = 'Stergiadou Ellie';
+    document.getElementsByClassName('team-member')[33].getElementsByClassName('team-member-name')[0].innerText = 'Patrali Marina';
+    document.getElementsByClassName('team-member')[34].getElementsByClassName('team-member-name')[0].innerText = 'Pliakos Dimitris';
+    document.getElementsByClassName('team-member')[35].getElementsByClassName('team-member-name')[0].innerText = 'Theoxaris Michalis';
+    document.getElementsByClassName('team-member')[36].getElementsByClassName('team-member-name')[0].innerText = 'Vouraki Marianna';
+    document.getElementsByClassName('team-member')[37].getElementsByClassName('team-member-name')[0].innerText = 'Karipidis Thodoris';
+    
 }

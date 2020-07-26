@@ -85,7 +85,10 @@ function changeToGreek() {
     document.getElementsByClassName('team-member')[36].getElementsByClassName('team-member-name')[0].innerText = 'Βουράκη Μαριάννα';
     document.getElementsByClassName('team-member')[37].getElementsByClassName('team-member-name')[0].innerText = 'Καριπίδης Θοδωρής';
     document.getElementsByClassName('team-member')[38].getElementsByClassName('team-member-name')[0].innerText = 'Χατζημίσιος Περικλής';
-
+    //women in enginnering
+    document.getElementsByClassName('wies')[0].getElementsByTagName('h2')[0].getElementsByTagName('b')[0].innerHTML = "Γυναίκες στη Μηχανιλογία";
+    document.getElementsByClassName('item active text-center')[0].getElementsByTagName('h4')[0].getElementsByTagName('b')[0].innerHTML = "Πιστεύω στην απεριόριστη δύναμη των γυναικών στο πλαίσιο της επιστήμης και της μηχανικής - Elizabeth Holmes.";
+    document.getElementsByClassName('item active text-center')[0].getElementsByTagName('p')[0].innerHTML = 'Συνεργαζόμαστε για την αλλαγή του προσώπου της μηχανικής, αφιερωμένο στην προώθηση των γυναικών σε ρόλους μηχανικής και ηγεσίας, εμπνέοντας τα νεαρά κορίτσια να επιτύχουν τους στόχους τους στην επιστήμη.';
 }
 
 //this fucntion changes all the texts of the page from greek to english :(
@@ -161,5 +164,8 @@ function changeToEnglish() {
     document.getElementsByClassName('team-member')[35].getElementsByClassName('team-member-name')[0].innerText = 'Theoxaris Michalis';
     document.getElementsByClassName('team-member')[36].getElementsByClassName('team-member-name')[0].innerText = 'Vouraki Marianna';
     document.getElementsByClassName('team-member')[37].getElementsByClassName('team-member-name')[0].innerText = 'Karipidis Thodoris';
-    
+    //women in enginnering
+    document.getElementsByClassName('wies')[0].getElementsByTagName('h2')[0].getElementsByTagName('b')[0].innerHTML = "Women in Engineering";
+    document.getElementsByClassName('item active text-center')[0].getElementsByTagName('h4')[0].getElementsByTagName('b')[0].innerHTML = "I believe in the unlimited power of women in the context of science and engineering -Elizabeth Holmes.";
+    document.getElementsByClassName('item active text-center')[0].getElementsByTagName('p')[0].innerHTML = 'We work together on changing the face of engineering, dedicated to promoting women in engineering & leadership roles, inspiring young girls to achieve their goals in science.';
 }

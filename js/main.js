@@ -82,31 +82,11 @@ jQuery(document).ready(function () {
 });
 
 function eventChanger(num) {
-  if (num === 0) {
-    if (document.getElementById("btn0").innerText === "Show more...") {
-      document.getElementById(num).innerHTML = eventTextExpand[num];
-      document.getElementById("btn0").innerText = "Show less";
-    } else {
-      document.getElementById(num).innerHTML = eventText[num];
-      document.getElementById("btn0").innerText = "Show more...";
-    }
+  //minimizing all the events with an unorthodox way, plase don't judge me i am a good guy
+  for(var i = 0; i < 3; i ++) {
+    document.getElementById('btn' + i).innerText = "Show more...";
+    document.getElementById(i).innerHTML = eventText[i];
   }
-  if (num === 1) {
-    if (document.getElementById("btn1").innerText === "Show more...") {
-      document.getElementById(num).innerHTML = eventTextExpand[num];
-      document.getElementById("btn1").innerText = "Show less";
-    } else {
-      document.getElementById(num).innerHTML = eventText[num];
-      document.getElementById("btn1").innerText = "Show more...";
-    }
-  }
-  if (num === 2) {
-    if (document.getElementById("btn2").innerText === "Show more...") {
-      document.getElementById(num).innerHTML = eventTextExpand[num];
-      document.getElementById("btn2").innerText = "Show less";
-    } else {
-      document.getElementById(num).innerHTML = eventText[num];
-      document.getElementById("btn2").innerText = "Show more...";
-    }
-  }
+  document.getElementById(num).innerHTML = eventTextExpand[num];
+  document.getElementById('btn' + i).innerHTML = "Show less"
 }

@@ -70,7 +70,8 @@ jQuery(document).ready(function () {
 
     var section = $(this).attr("href");
 
-    $("html, body").animate({
+    $("html, body").animate(
+      {
         scrollTop: $(section).offset().top - -2,
       },
       1250,
@@ -83,17 +84,18 @@ jQuery(document).ready(function () {
 function eventChanger(num) {
   //minimizing all the events with an unorthodox way, plase don't judge me i am a good guy
   for (var i = 0; i < 3; i++) {
-    document.getElementById("btn" + i).innerText = "Show more...";
-    document.getElementById(i).innerHTML = eventText[i];
+    if (num != i) {
+      document.getElementById("btn" + i).innerText = "Show more...";
+      document.getElementById(i).innerHTML = eventText[i];
+    }
   }
   if (num != 4) {
-    console.log(document.getElementById("btn" + num).innerText);
-    if (document.getElementById(num).innerHTML == eventTextExpand[num]) {
-      document.getElementById("btn" + num).innerText = "Show more...";
-      document.getElementById(num).innerHTML = eventText[num];
-    }else {
-      document.getElementById("btn" + num).innerText = "Show less";
+    if (document.getElementById("btn" + num).innerText == "Show more...") {
+      document.getElementById("btn" + num).innerText = "Snow less";
       document.getElementById(num).innerHTML = eventTextExpand[num];
+    } else {
+      document.getElementById("btn" + num).innerText = "Snow more...";
+      document.getElementById(num).innerHTML = eventText[num];
     }
   }
 }

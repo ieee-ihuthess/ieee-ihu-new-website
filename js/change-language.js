@@ -30,12 +30,12 @@ function changeToGreek() {
     document.getElementById('whoweare').getElementsByTagName('p')[0].innerHTML = 'Η ΙΕΕΕ Αντιπροσωπεύει';
     //services etc stuff
     var services = document.getElementsByClassName('service-area')[0].getElementsByClassName('row wow bounceInUp')[0].getElementsByClassName('col-md-4 col-sm-6 col-xs-12');
-    services[0].getElementsByTagName('p')[0].innerHTML = 'Αυτά είναι ελληνικά κείμενα, αλλα δεν ξέρω τι να γράψω :)';
-    services[1].getElementsByTagName('p')[0].innerHTML = 'Αυτά είναι ελληνικά κείμενα, αλλα δεν ξέρω τι να γράψω :)';
-    services[2].getElementsByTagName('p')[0].innerHTML = 'Αυτά είναι ελληνικά κείμενα, αλλα δεν ξέρω τι να γράψω :)';
-    services[3].getElementsByTagName('p')[0].innerHTML = 'Αυτά είναι ελληνικά κείμενα, αλλα δεν ξέρω τι να γράψω :)';
-    services[4].getElementsByTagName('p')[0].innerHTML = 'Αυτά είναι ελληνικά κείμενα, αλλα δεν ξέρω τι να γράψω :)';
-    services[5].getElementsByTagName('p')[0].innerHTML = 'Αυτά είναι ελληνικά κείμενα, αλλα δεν ξέρω τι να γράψω :)';
+    services[0].getElementsByTagName('p')[0].innerHTML = 'Μοιραζόμαστε τις γνώσεις μας μεταξύ μας, μιλάμε για νέες τεχνολογίες και συζητούμε για τα δυνατά και αδύνατα σημεία των εργαλείων.<br><br><br><br>';
+    services[1].getElementsByTagName('p')[0].innerHTML = 'Συνεργαζόμαστε, μοιραζόμαστε ιδέες και συνδιοργανώνουμε εκδηλώσεις μαζί με άλλους φοιτητικούς κλάδους του IEEE σε όλη την Ελλάδα.<br><br><br>';
+    services[2].getElementsByTagName('p')[0].innerHTML = 'Το σλόγκαν της IEEE είναι «Προηγμένη τεχνολογία για την ανθρωπότητα». Η δική μας πρωταρχική πράξη δεν θα μπορούσε να είναι τίποτα άλλο από το να βοηθάμε τους ανθρώπους να μεγαλώσουν, μέσω ομιλιών και εργαστηρίων.';
+    services[3].getElementsByTagName('p')[0].innerHTML = 'Ο πυρήνας μας είναι εθελοντισμός. Πιστεύουμε στην ομαδική εργασία και βοηθώντας τους ανθρώπους, χωρίς διακρίσεις, για να προχωρήσουμε μαζί.';
+    services[4].getElementsByTagName('p')[0].innerHTML = 'Δεν διαθέτουμε μόνο αγκύλες, εντολές και αριθμούς, αλλά και πανό, χρώματα και πλαίσια!';
+    services[5].getElementsByTagName('p')[0].innerHTML = 'Πιστεύουμε σε έναν προσβάσιμο ιστό. Εστιάζουμε στο να διατηρούμε τις πτυχές του ιστού μας εύχρηστες, παρέχοντας παράλληλα το πιο κομψό δυνατό αποτέλεσμα.';
     //workshop
     document.getElementsByClassName('section-title text-center wow zoomIn')[1].getElementsByTagName('h2')[0].getElementsByTagName('b')[0].innerHTML = 'ΕΚΔΗΛΩΣΕΙΣ';
     //members
@@ -103,6 +103,10 @@ function changeToGreek() {
     //upcoming events
     document.getElementsByClassName('section-title text-center wow zoomIn')[2].getElementsByTagName('h2')[0].getElementsByTagName('b')[0].innerHTML = 'ΑΝΕΡΧΟΜΕΝΕΣ ΕΚΔΗΛΩΣΕΙΣ';
     document.getElementsByClassName('section-title text-center wow zoomIn')[2].getElementsByTagName('h4')[0].innerHTML = 'Ανερχόμενες Εκδηλώσεις από το Student Branch';
+    //dates
+    document.getElementsByClassName('deat')[0].getElementsByTagName('span')[1].innerHTML = 'Σεπ';
+    document.getElementsByClassName('deat')[1].getElementsByTagName('span')[1].innerHTML = 'Δεκ';
+    document.getElementsByClassName('deat')[2].getElementsByTagName('span')[1].innerHTML = 'Οκτ';
     //changing the texts from english to greek
     eventText[0] = "Το Ερευνητικό Εργαστήριο Συστημάτων Υπολογιστών, Ασφάλειας και Δικτύων (ΣΥΑΔ) του Αλεξάνδρειου ΤΕΙ Θεσσαλονίκης και το IEEE Student Branch at Alexander TEI of Thessaloniki συνδιοργανώνουν το Winter School με τίτλο “Internet of Things: Security, Communication & Application Challenges” την Παρασκευή 15 και Σάββατο 16 Δεκεμβρίου (10:00-18:00) στο ΑΤΕΙΘ (Αίθουσα Φίλιππος, κεντρικός διάδρομος)...";
     eventText[1] = "Μέλη του IEEE student branch του ΤΕΙ Θεσσαλονίκης χρησιμοποιούν την ανάγκη ανανέωσης της σελίδας του branch, για να έρθουν σε επαφή με το react.js framework και το nodejs. Θα πρσπαθήσουμε το μεγαλύτερο μέρος της ανάπτυξης να γίνει στα meetups, τα οποία θα είναι ανοιχτά για όλους. Αυτό το Σάββατο θα γίνει review σε ότι έχουμε κάνει μέχρι τώρα και...";
@@ -111,6 +115,14 @@ function changeToGreek() {
     eventTextExpand[1] = "Μέλη του IEEE student branch του ΤΕΙ Θεσσαλονίκης χρησιμοποιούν την ανάγκη ανανέωσης της σελίδας του branch, για να έρθουν σε επαφή με το react.js<br> framework και το nodejs.Θα πρσπαθήσουμε το μεγαλύτερο μέρος της ανάπτυξης να γίνει στα meetups, τα οποία θα είναι ανοιχτά για όλους.<br>Αυτό το Σάββατο θα γίνει review σε ότι έχουμε κάνει μέχρι τώρα και θα συζητήσουμε την πορεία της ανάπτυξης.<br>Την Παρασκευή 22 Δεκεμβρίου θα υλοποιήσαμε routing με react-router και θα σχεδιάσαμε την βάση δεδομένων.";
     eventTextExpand[2] = "<strong>IEEE DAY 2017</strong><br>Ελάτε να γνωριστούμε!<br>Την Τετάρτη 11/10 στις 12:15 (Αίθουσα 109) η ομαδα φοιτητών του παραρτήματος της ΙΕΕΕ του ΤΕΙ μας διοργανώνει μια εκδήλωση γνωριμίας και παρουσίασης της δράσης του!<br>Σας περιμένουμε!<br>Αναλυτικά το πρόγραμμα:<br>–Παρουσίαση του οργανισμού της ΙΕΕΕ<br>–Παρουσίαση του φοιτητικού παραρτήμαρτος. Πως οι φοιτητές συμμετέχουν και τι αρμοδιότητες μπορούν να έχουν<br>–Παρουσιάση του ΙΕΕΕΧtreme (παγκόσμιος διαγωνισμός προγραμματισμού)<br>–Δράσεις του δικού μας παραρτήματος<br>–Παρουσίαση του ηλεκτροκίνητου μονοθεσίου αυτοκινήτου και του προγραμματισμού του από την ομάδα των Ηλεκτρολόγων μηχανικών και μηχανικών η/υ του απθ<br>–Γνωριμία μελών και συζήτηση.";
     eventChanger(4); //this minimizes all the events
+    //contact form 
+    document.getElementsByClassName('section-title')[3].getElementsByTagName('b')[0].innerHTML = 'ΑΦΗΣΤΕ ΜΑΣ ΜΗΝΥΜΑ';
+    document.getElementById('name').placeholder = 'Όνομα*';
+    document.getElementById('email').placeholder = 'Ηλετρονικό Ταχυδρομείο*';
+    document.getElementById('message').placeholder = 'Μήνυμα*';
+    //cookies
+    document.getElementById('cookieconsent:desc').innerHTML = 'Χρησιμοποιούμε cookies για να διασφαλίσουμε ότι σας προσφέρουμε την καλύτερη εμπειρία στον ιστότοπό μας. Εάν συνεχίσετε να χρησιμοποιείτε αυτόν τον ιστότοπο, θα υποθέσουμε ότι είστε ικανοποιημένοι με αυτό.';
+    document.getElementById('contact-detail').innerHTML = 'Διεθνές Πανεπιστήμιο Ελλάδος (Παράρτημα Σίνδου)<br>Θεσσαλονίκη, Ελλάδα';
 }
 
 //this fucntion changes all the texts of the page from greek to english :(
@@ -203,6 +215,11 @@ function changeToEnglish() {
     //upcoming events
     document.getElementsByClassName('section-title text-center wow zoomIn')[2].getElementsByTagName('h2')[0].getElementsByTagName('b')[0].innerHTML = 'UPCOMING EVENTS'
     document.getElementsByClassName('section-title text-center wow zoomIn')[2].getElementsByTagName('h4')[0].innerHTML = 'Upcoming Events from our Student Branch';
+    //dates
+    document.getElementsByClassName('deat')[0].getElementsByTagName('span')[1].innerHTML = 'Sep';
+    document.getElementsByClassName('deat')[1].getElementsByTagName('span')[1].innerHTML = 'Dec';
+    document.getElementsByClassName('deat')[2].getElementsByTagName('span')[1].innerHTML = 'Oct';
+    //changing the texts from greek to english
     eventText[0] = 'The Research Laboratory of Computer Systems, Security and Networks (SYAD) of Alexandreio TEI of Thessaloniki and the IEEE Student Branch at Alexander TEI of Thessaloniki co-organize the Winter School entitled "Internet of Things: Security, Communication & Application Challenges" on Friday 15 and Saturday 16 December (10: 00-18: 00) at ATEITH (Filippos Hall, main corridor)...';
     eventText[1] = "Members of the IEEE student branch of the TEI of Thessaloniki use the need to update the branch page, to get in touch with the react.js framework and nodejs. We will try to make the most of the development in meetups, which will be open to everyone. This Saturday there will be a review of what we have done so far and...";
     eventText[2] = "<strong>IEEE DAY 2017</strong> <br> Let's meet! <br> On Wednesday 11/10 at 12:15 (Room 109) the group of students of the branch of the IEEE of our TEI organizes an event of acquaintance and presentation of action! We are waiting for you! <br> Detailed program: <br> –Presentation of the IEEE organization...";
@@ -210,4 +227,13 @@ function changeToEnglish() {
     eventTextExpand[1] = "Members of the IEEE student branch of the TEI of Thessaloniki use the need to update the branch page, to get in touch with react.js <br> framework and nodejs.We will try to do most of the development in meetups, which will are open to everyone. <br> This Saturday we will review what we have done so far and discuss the development process. <br> On Friday, December 22 we will implement react-router routing and design the database.";
     eventTextExpand[2] = "<strong> IEEE DAY 2017 </strong> <br> Let's meet! <br> On Wednesday 11/10 at 12:15 (Room 109) the group of students of the IEEE branch of our TEI organizes an event of acquaintance and presentation of We are waiting for you! <br> Detailed program: <br> - Presentation of the organization of IEEE <br> - Presentation of the student branch. How students participate and what responsibilities they can have <br> - Presentation of IEEEXtreme (global programming competition) <br> - Actions of our branch <br> - Presentation of the electric car and its programming by the team of Electrical Engineers and computer engineers of the university - Meeting members and discussion.";
     eventChanger(4); //this minimizes all the events
+    //contact form 
+    document.getElementsByClassName('section-title')[3].getElementsByTagName('b')[0].innerHTML = 'LEAVE A MESSAGE';
+    document.getElementById('name').placeholder = 'Name*';
+    document.getElementById('email').placeholder = 'Email*';
+    document.getElementById('message').placeholder = 'Message*';
+    //cookies
+    document.getElementById('cookieconsent:desc').innerHTML = 'We use cookies to ensure that we give you the best experience on our website. If you continue to use this site we will assume that you are happy with it.';
+    //
+    document.getElementById('contact-detail').innerHTML = 'International Hellenic University (Sindos Campus)<br>Thessaloniki, Greece';
 }
